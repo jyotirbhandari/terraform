@@ -62,32 +62,6 @@ resource "aws_elasticache_subnet_group" "elasticache" {
   count = "${length(var.vpc_elasticache_subnets) > 0 ? 1 : 0}"
 }
 
-//resource "random_shuffle" "public" {
-//  depends_on = ["aws_subnet.public"]
-//  input = ["${aws_subnet.public.*.id}"]
-//  result_count = 1
-//}
-//
-//resource "random_shuffle" "private" {
-//  depends_on = ["aws_subnet.private"]
-//  input = ["${aws_subnet.private.*.id}"]
-//  result_count = 1
-//}
-//
-//resource "random_shuffle" "database" {
-//  depends_on = ["aws_subnet.database"]
-//  input = ["${aws_subnet.database.*.id}"]
-//  result_count = 1
-//}
-//
-//resource "random_shuffle" "elasticache" {
-//  depends_on = ["aws_subnet.elasticache"]
-//  input = ["${aws_subnet.elasticache.*.id}"]
-//  result_count = 1
-//
-//}
-
-
 // Create internet gateway for public subnet
 resource "aws_internet_gateway" "int_gw" {
   vpc_id = "${var.vpc_id}"

@@ -37,21 +37,6 @@ output "private_subnets_cidr_block" {
   value = ["${aws_subnet.private.*.cidr_block}"]
 }
 
-//output "random_public_subnets" {
-//  value = "${random_shuffle.public.result[0]}"
-//}
-//
-//output "random_private_subnets" {
-//  value = "${random_shuffle.private.result[0]}"
-//}
-//
-//output "random_database_subnets" {
-//  value = "${random_shuffle.database.result[0]}"
-//}
-//
-//output "random_elasticache_subnets" {
-//  value = "${random_shuffle.public.result[0]}"
-//}
 output "internet_gw" {
  value = "${aws_internet_gateway.int_gw.id}"
 }
