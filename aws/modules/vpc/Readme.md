@@ -1,10 +1,10 @@
-## Module for AWS VPC
+# Module for AWS VPC
 
-# Description
+## Description
 
 The following is a module for Amazon Web Services VPC (Virtual Private Cloud). The module can be included in any environment you want to create private cloud for example prod, stg, dev or testing.
 
-# Variables
+## Variables
 
 ```vpc_cidr:``` 
 
