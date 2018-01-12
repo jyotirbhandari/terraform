@@ -7,7 +7,8 @@ Using AWS resources to build automated infrastructure with an ease.
 The following modules can be used with the AWS provider.
 
 ```
-[alb](aws/modules/alb)
+[alb](https://github.com/jyotirbhandari/terraform/tree/master/aws/modules/alb)
+
 alb_elb_asg
 alb_elb_lc
 alb_elb_schedule
