@@ -49,7 +49,7 @@ To use the VPC CIDR in any other resource or module, the above attribute is used
 To use the VPC main route table id in any other resource or module, the above attribute is used.
 
 
-# Example:
+# Example
 
 ```
 module "vpc" {
