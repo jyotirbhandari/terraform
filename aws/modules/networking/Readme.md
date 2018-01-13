@@ -38,11 +38,11 @@ Mention the subnets you want to segregate for database (RDS). Type is list.
 
 Mention the subnets you want to segregate for elasticache. Type is list.
 
-```nat_id:```
+```nat_id```
 
 Mention the nat instance id, usually for routing internet to private subnets.
 
-```gw_id:```
+```gw_id```
 
 Mention the gateway id, if you do not intend to use nat instance id.
 
@@ -62,15 +62,19 @@ Create resource for database subnets group basically RDS subnet group.
 Create resource for Elasticache subnets group.
 
 ```aws_internet_gateway```
+
 Create internet gateway for public subnet.
 
 ```aws_route```
+
 Create route to internet via default table.
 
 ```aws_route_table_association```
+
 Associating subnets to public, private, elasticache, database route table.
 
 ```aws_route_table```
+
 Create route table for usually for private subnets.
 
 
@@ -80,7 +84,7 @@ Create route table for usually for private subnets.
 
 To use the Public subnets in a list format in any other resource or module, the above attribute is used.
 
-```private_subnetsi```
+```private_subnets```
 
 To use the Private subnets in a list format in any other resource or module, the above attribute is used.
 
@@ -112,7 +116,7 @@ To use the Private subnets cidr block in a list format in any other resource or 
 
 To use internet gateway id in any other resource or module, the above attribute is used.
 
-# Example:
+# Example
 
 The scenario is explained with two examples, the first is for Public and Private subnets and the second is for only Public subnets.
 
