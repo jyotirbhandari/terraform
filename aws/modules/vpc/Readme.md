@@ -6,11 +6,11 @@ The following is a module for Amazon Web Services VPC (Virtual Private Cloud). T
 
 ## Variables
 
-```vpc_cidr:``` 
+```vpc_cidr``` 
 
 Mention the cidr block, can refer to the Resource setion for recommedation.
 
-```env:```
+```env```
 
 Mention the environment name prod, stg, dev or testing in the file in which module is called.
 
@@ -36,15 +36,15 @@ To enable instance to get hostname, one needs to set the boolen "true".
 
 ## Output
 
-```vpc_id:```
+```vpc_id```
 
 To use the VPC ID in any other resource or module, the above attribute is used.
 
-```vpc_cidr:```
+```vpc_cidr```
 
 To use the VPC CIDR in any other resource or module, the above attribute is used.
 
-```vpc_main_route_table:```
+```vpc_main_route_table```
 
 To use the VPC main route table id in any other resource or module, the above attribute is used.
 
