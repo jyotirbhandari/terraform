@@ -11,10 +11,7 @@ resource "aws_efs_file_system" "main" {
 
 resource "aws_efs_mount_target" "main" {
   count = "${length(split(",", var.efs_subnet_ids))}"
-  //count = "${length(var.efs_subnet_ids)}"
-  //count = 6
   file_system_id = "${aws_efs_file_system.main.id}"
-  //subnet_id      = "${element(split(",", format("%s", var.efs_subnet_ids)), count.index)}"
   subnet_id      = "${element(split(",", var.efs_subnet_ids), count.index)}"
   security_groups = ["${var.efs_security_groups}"]
   lifecycle {
