@@ -36,7 +36,7 @@ Create a resource elastic file system, also mention the performance mode.
 
 ```aws_efs_mount_target```
 
-Create a resource elastic file system mout target.
+Create a resource elastic file system mount target.
 
 
 ## Output
@@ -53,7 +53,7 @@ To use the EFS dns name for given subnet in any other resource or module, the ab
 # Example
 
 ```
-module "efs_elasticsearch" {
+module "efs" {
   source = "github.com/jyotirbhandari/terraform/aws/modules/efs"
   efs_subnet_ids = "${join(",", module.networking.private_subnets)}"
   efs_security_groups = ["${module.sg.sg_id}"]
