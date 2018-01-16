@@ -2,11 +2,9 @@
 
 ## Description
 
-The following is a module for Amazon Web Services EFS (Elastic File System). The module can be included in any environment.
+The following is a module for Amazon Web Services Elasticache (Redis or Memcached). The module can be included in any environment.
 
 ## Variables
-
-
 
 ```env```
 
