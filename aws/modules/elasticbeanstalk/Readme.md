@@ -1,8 +1,8 @@
-# Module for Elasticbeanstalk
+# Module for AWS Elasticbeanstalk
 
 ## Description
 
-Terraform module which creates elasticbeanstalk worker resources on AWS
+Terraform module which creates elasticbeanstalk worker resources on AWS.
 
 WORK IN PROGRESS for Readme.md, but can use module.
 
