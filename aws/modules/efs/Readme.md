@@ -45,7 +45,7 @@ Create a resource elastic file system mount target.
 
 To use the EFS mount ID in any other resource or module, the above attribute is used.
 
-```efs_dbs```
+```efs_dns```
 
 To use the EFS dns name for given subnet in any other resource or module, the above attribute is used.
 
