@@ -1,4 +1,4 @@
-# Module for AWS EFS
+# Module for AWS Elasticache
 
 ## Description
 
