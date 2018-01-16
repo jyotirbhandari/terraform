@@ -58,7 +58,7 @@ Create a resource elasticache clsuter.
 
 ```elasticache_addr```
 
-To use the the fqdn address of the elasticache node, the above attribute is used.
+To use the fqdn address of the elasticache node, the above attribute is used.
 
 
 # Example
