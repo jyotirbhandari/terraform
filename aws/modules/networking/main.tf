@@ -1,7 +1,5 @@
 data "aws_availability_zones" "azs" {}
 
-
-
 // Create public subnet in the VPC
 resource "aws_subnet" "public" {
   vpc_id = var.vpc_id
