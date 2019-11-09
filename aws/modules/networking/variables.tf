@@ -75,3 +75,4 @@ variable "tags_elasticache" {
   type    = map(string)
   default = null
 }
+
