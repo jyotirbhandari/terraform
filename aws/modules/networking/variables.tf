@@ -51,28 +51,3 @@ variable "gw_id" {
   description = "Id of the Gateway"
   default = ""
 }
-
-variable "tags_public" {
-  description = "Tags for public subnets"
-  type    = map(string)
-  default = null
-}
-
-variable "tags_private" {
-  description = "Tags for private subnets"
-  type    = map(string)
-  default = null
-}
-
-variable "tags_database" {
-  description = "Tags for database subnets"
-  type    = map(string)
-  default = null
-}
-
-variable "tags_elasticache" {
-  description = "Tags for elasticache subnets"
-  type    = map(string)
-  default = null
-}
-

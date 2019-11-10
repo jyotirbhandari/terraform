@@ -1,8 +1,8 @@
-# Module for AWS Elasticbeanstalk
+# Module for AWS EC2 Autoscaling Schedule 
 
 ## Description
 
-Terraform module which creates elasticbeanstalk worker resources on AWS.
+Terraform module which creates EC2 autoscaling schedule resources on AWS.
 
 WORK IN PROGRESS for Readme.md, but can use module.
 
